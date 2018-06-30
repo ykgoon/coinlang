@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Input, Layout, Row, Col } from 'antd';
+import 'antd/dist/antd.css';
 import './App.css';
+
+const { TextArea } = Input;
+const { Header, Footer, Content } = Layout;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header>
+          <div className="title">Coin Language</div>
+        </Header>
+        <Content>
+          <Row>
+            <Col span={4}></Col>
+            <Col span={16}>
+              <TextArea
+                placeholder="Write your core point"
+                autosize={{ minRows: 3, maxRows: 7 }}
+                />
+            </Col>
+            <Col span={4}></Col>
+          </Row>
+        </Content>
+        <Footer>
+          <p>
+            Create your own icon-word (coming-soon)
+          </p>
+        </Footer>
       </div>
     );
   }

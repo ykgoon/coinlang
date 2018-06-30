@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Coin Language",
+  "name": "Compose coinlang",
   "icons": [
     {
       "src": "favicon.ico",
