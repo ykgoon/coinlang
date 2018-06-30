@@ -23,15 +23,18 @@ class App extends Component {
                 placeholder="Write your core point"
                 autosize={{ minRows: 3, maxRows: 7 }}
                 />
-              <Picker set='emojione' title='Coin Language'/>
+              <Picker
+                set='emojione'
+                title='Coin Language'
+                autoFocus='true'
+                emojiTooltip='true'
+                />
             </Col>
             <Col span={4}></Col>
           </Row>
         </Content>
         <Footer>
-          <p>
-            Create your own icon-word (coming-soon)
-          </p>
+          Create your own icon-word (coming-soon)
         </Footer>
       </div>
     );
